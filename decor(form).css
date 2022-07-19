@@ -1,0 +1,136 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #F94C66;
+    margin: 5%;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0%;
+  font-family: Helvetica, sans-serif;
+  font-weight: 540;
+  color: #FF1700;
+}
+
+.container {
+    background-color: #FAFAFA;
+    padding: 2%;
+    border-style: solid;
+    border-color: #898AA6;
+    border-width: 1.5px;
+    margin: auto;
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: #898AA6;
+}
+
+.container .who input{
+  width: auto;
+  padding: 8px 12px;
+  margin: 8px;
+  border: none;
+  border-bottom: 2px solid #FF1700;
+  background-color: #FAFAFA;
+  transition: width 0.4s ease-in-out;
+}
+.container .who input:focus{
+  background-color: #FFDEDE;
+  border: 2px solid ;
+  width: 100%;
+  outline: #FF1700;
+}
+
+.container .where input{
+  width: auto;
+  padding: 8px 12px;
+  margin: 8px;
+  border: none;
+  border-bottom: 2px solid #FF1700;
+  background-color: #FAFAFA;
+  transition: width 0.4s ease-in-out;
+}
+
+.container .where input:focus{
+  background-color: #FFDEDE;
+  border: 2px solid ;
+  width: 100%;
+  outline: #FF1700;
+}
+
+.container .email input{
+  width: auto;
+  padding: 8px 12px;
+  margin: 8px;
+  border: none;
+  border-bottom: 2px solid #FF1700;
+  background-color: #FAFAFA;
+  transition: width 0.4s ease-in-out;
+}
+
+.container .email input:focus{
+  background-color: #FFDEDE;
+  border: 2px solid ;
+  width: 100%;
+  outline: #FF1700;
+}
+
+.container .gender input{
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+.container .gender label {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid #FF1700;
+  border-radius: 4px;
+  margin-bottom: 3px;
+}
+.container .gender label:hover{
+  background-color: #FFDEDE;
+}
+.container .gender input:focus + label{
+  border: 2px solid #FFDEDE;
+}
+.container .gender input:checked + label{
+  background-color: #FF1700;
+  border-color: #FF1700;
+  color: white;
+}
+
+.container .when input::-webkit-datetime-edit{
+  padding: 10px;
+}
+
+.container .what textarea{
+  width: 75%;
+  height: fit-content;
+  border: 2px solid #FF1700;
+  border-radius: 4px;
+  padding: 12px;
+  resize: none;
+  outline: #FF1700;
+}
+
+.container .button{
+  text-align: center;
+}
+.container .button input[type=submit], input[type=reset] {
+  text-align: center;
+  background-color: #FF1700;
+  border-color: #F94C66;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin: 3px;
+  color: white;
+}
+
+
+
+
