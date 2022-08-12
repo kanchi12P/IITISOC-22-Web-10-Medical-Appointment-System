@@ -1,0 +1,97 @@
+.navbar{
+    font-size: larger;
+    text-decoration: solid;
+    margin: 0;
+    padding: 1px;
+    background-color: #d2cdd3c3;
+    word-spacing: 20px;
+}
+.nav-list{
+    display: flex;
+}
+.nav-list li{
+    list-style: none;
+}
+.nav-list li a{
+    padding: 26px 30px;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+.nav-list li a:hover{
+    color: rgb(32, 108, 230);
+}
+.container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    animation: animate 16s ease-in-out infinite;
+    background-size: cover;
+}
+
+@keyframes animate {
+    0%,100%{
+        background-image: url('img/gettyimages.jpg');
+    }
+    25%{
+        background-image: url('img/7mvPH4X.jpg');
+    }
+    50%{
+        background-image: url('img/pharma.jpg');
+    }
+    75%{
+        background-image: url('img/R.jpg');
+    }
+}
+/* @media only screen and (max-width:1000px){
+    .navigation_auto{
+        flex-direction: row;
+        align-items: center;
+    }
+} */
+.margin{
+    margin-top: 50%;
+}
+ .Appointment h1{
+    text-align: center;
+    font-size: 40px;
+} 
+
+ .Appointment p{
+    text-align: center;
+    font-size: x-large;
+    text-decoration: bold;
+
+}
+
+.Appointment .button{
+    position: relative;
+    padding: 5px;
+    margin: 10px;
+    margin-left: 43%;
+    text-align: center;
+    font-size: larger;
+    background: pink;
+    cursor: pointer;
+    border: solid 2px pink;
+    border-radius: 20px;
+} 
+
+ .map{
+    text-align: center;
+    font-size: x-large;
+}
+
+Map{
+    margin-left: 40%;
+    width: 80%;
+    border-radius: 20px;
+} 
+
+Map div a{
+    margin-left: 78%;
+}
+
+
