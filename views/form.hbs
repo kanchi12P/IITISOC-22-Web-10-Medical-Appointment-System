@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/decor(form).css">
+    <script src="resp.js"></script>
+    <head>
+        <body>
+            
+            <div class="container">
+                <h1>Appointment Form</h1>
+                <form action="/view" name="HealthForm" onsubmit="return validateForm()" method="post">
+                <div class="who">                    
+                    <input type="text" name="fName" id="Name" placeholder="Name" required><b><span class="formerror"></span></b>                    
+                </div>
+            <br>
+                <div class="where">                    
+                    <input type="text" name="fArea" id="Area" placeholder="Area" required><b><span class="formerror"></span></b>    
+                </div>
+            <br>
+                <div class="who">                    
+                    <input type="tel" pattern="[0-9]{10}" name="fmobile no." id="mobile" placeholder="Mobile Number" required>
+                    <b><span class="formerror"></span></b> 
+                </div>
+            <br>
+            <div class="email">
+                <input type="email" placeholder="Enter E-mail ID" id="email">
+            </div>
+            <br>
+                <div class="gender">
+                    Gender:
+                    <input type="radio" id="male" name="fGender" value="Male">
+                    <label for="male"> Male </label>
+                    <input type="radio" id="female" name="fGender" value="Female">
+                    <label for="female"> Female </label>
+                    <input type="radio" id="other" name="fGender" value="Other">
+                    <label for="other"> Other </label>
+                </div>
+            <br>
+                <div class="when">
+                    Appointment Date: <input type="date" name="Appointment Date" required>
+                </div>    
+            <br>
+                <div class="when">
+                    Appointment Time: <input type="time" name="Appointment Time"><b>(*Appointment time may vary from patient's request)</b>
+                </div>
+            <br>
+                <div class="what">                    
+                    <textarea name="Problem" cols="40" rows="10" placeholder="Describe your problem/symptoms"></textarea>  
+                </div>
+                <div class="button">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>                
+                </form>
+            </div>
+            
+        </body>
+       
+    </head>
